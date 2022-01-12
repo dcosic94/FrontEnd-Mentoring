@@ -1,11 +1,104 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+
+/*Ovaj komad koda skriva sadržaj samo za one koji ne koriste screen reader*/
+.u-visuallyHidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
 }
 
 html {
     font-family: 'Barlow', sans-serif;
+        font-size: 62.5%;
 }
 
 h1, h2, h3 {
     font-family: 'Fraunces', serif;
+
+}
+
+h1 {
+    font-size: 5.6rem;;
+}
+
+header {
+    padding: 1rem;
+    background-color: #49BCF1;
+
+}
+
+header .contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contain {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.main-navigation ul  {
+    display: none;
+    list-style: none;
+    align-items: center;
+}
+
+.main-navigation ul a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.125rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-navigation ul a:hover {
+    text-decoration: underline;
+}
+
+.main-navigation ul a:focus-visible {
+    outline: 1px solid #24303E  ;
+}
+
+.main-navigation .contact {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #24303E;
+    background-color: #fff;
+    border-radius: 2.8rem;
+    padding: 1.2rem 2rem;
+    transition:color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.main-navigation .contact:focus,
+.main-navigation .contact:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    border: 0;
+    background: transparent;
+}
+
+@media (min-width: 40em) {
+    button {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: flex;
+        
+    }
 }
