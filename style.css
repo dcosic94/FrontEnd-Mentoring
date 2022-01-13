@@ -89,7 +89,7 @@ header .contain {
 }
 
 .hero-section {
-    height: 80rem;
+    height: 80vh;
     background-color:#3DBEFF;
     background-image: url('assets/desktop/image-header.jpg');
     background-position: center; 
