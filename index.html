@@ -59,51 +59,56 @@
 
     <main>
       <section class="hero-section">
-            <h1>We are creatives</h1>
-            <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
-              <g
-                stroke="#FFF"
-                stroke-width="6"
-                fill="none"
-                fill-rule="evenodd"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M18 3v100M3 95.484l15 15 15-15" />
-              </g>
-            </svg>
+            <div class="contain">
+              <h1>We are creatives</h1>
+              <svg aria-hidden="true" focusable="false" width="36" height="114" xmlns="http://www.w3.org/2000/svg">
+                <g
+                  stroke="#FFF"
+                  stroke-width="6"
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M18 3v100M3 95.484l15 15 15-15" />
+                </g>
+              </svg>
+            </div>
       </section>
 
 <!-- Picture tag služi kod postavljanja fotografija za različite vrste ekrana. Npr. za jednu širinu ide jedna fotka dok za neku drugu ide druga, itd.-->
 
-      <picture>
-            <source media="(min-width: 800px)" srcset="assets/desktop/image-transform.jpg" width="720" height="600">
-            <img src="assets/mobile/image-transform.jpg" width="375" height="312" alt="Picture of an egg">
-        </picture>
-        <h2>Transform your brand</h2>
-        <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <a href="#more">learn more <span class="u-visuallyHidden">how to transform your brand</span></a>
-
-        <picture>
-            <source media="(min-width: 800px)" srcset="assets/desktop/image-stand-out.jpg" width="720" height="600">
-            <img src="assets/mobile/image-stand-out.jpg" width="375" height="312" alt="Picture of an glass">
-        </picture>
-        <h2>Stand out to the right audience</h2>
-        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places. </p>
-        <a href="#more">learn more <span class="u-visuallyHidden">how to stand out to the right audience</span></a>
-
-        <picture>
-            <source media="(min-width: 800px)" srcset="assets/desktop/image-graphic-design.jpg" width="720" height="600">
-            <img src="assets/mobile/image-graphic-design.jpg" width="375" height="600" alt="Picture of an cherry">
-        </picture>
-        <h2>Graphic Design</h2>
-        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
-
-        <picture>
-            <source media="(min-width: 800px)" srcset="assets/desktop/image-photography.jpg" width="720" height="600">
-            <img src="assets/mobile/image-photography.jpg" width="375" height="600" alt="Picture of an orange">
-        </picture>
-        <h2>Photography</h2>        
-        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      <section class="services">
+          <picture>
+                <source media="(min-width: 800px)" srcset="assets/desktop/image-transform.jpg" width="720" height="600">
+                <img src="assets/mobile/image-transform.jpg" width="375" height="312" alt="Picture of an egg">
+            </picture>
+            <div class="services-caption contain">
+              <h2>Transform your brand</h2>
+              <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+              <a href="#more">learn more <span class="u-visuallyHidden">how to transform your brand</span></a>
+            </div>
+            <picture>
+                <source media="(min-width: 800px)" srcset="assets/desktop/image-stand-out.jpg" width="720" height="600">
+                <img src="assets/mobile/image-stand-out.jpg" width="375" height="312" alt="Picture of an glass">
+            </picture>
+            <div class="services-caption contain">
+              <h2>Stand out to the right audience</h2>
+              <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places. </p>
+              <a href="#more">learn more <span class="u-visuallyHidden">how to stand out to the right audience</span></a>
+            </div>
+            <picture>
+                <source media="(min-width: 800px)" srcset="assets/desktop/image-graphic-design.jpg" width="720" height="600">
+                <img src="assets/mobile/image-graphic-design.jpg" width="375" height="600" alt="Picture of an cherry">
+            </picture>
+            <h2>Graphic Design</h2>
+            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+            <picture>
+                <source media="(min-width: 800px)" srcset="assets/desktop/image-photography.jpg" width="720" height="600">
+                <img src="assets/mobile/image-photography.jpg" width="375" height="600" alt="Picture of an orange">
+            </picture>
+            <h2>Photography</h2>
+            <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </section>
 
       <h2>Client testimonials</h2>
 

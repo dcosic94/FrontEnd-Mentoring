@@ -1,0 +1,5 @@
+Pitanja
+
+1. Kada koristimo postotak u css-u?
+2. Kako najlakše pohvatati css grid? Vidim da ima dosta mogućnosti koje su za početak dosta nejasne. Možd ada nam objasniš šta se koristi većinom.
+3. Jel možemo u čistom css-u definirati globalne varijable za boje pa ih koristiti kroz kodiranje kako ne bi morali stalno pretraživati boje?
