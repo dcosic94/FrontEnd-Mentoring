@@ -200,7 +200,57 @@ button {
         background-color: #ffe4e0;
     }
 
-   
+ .works {
+     display: grid;
+     max-width: 144rem;
+     margin: 0 auto;
+ }  
+
+ .works .card {
+     display: grid;
+     max-width: 100%;
+     margin: initial;
+     grid-template-columns: auto;
+ }
+
+    .works .card > * {
+        grid-area: 1 / 1;
+    }
+
+
+    .works .card > div {
+        align-self: end;
+        text-align: center;
+        padding: 0 1rem 5rem 1rem;
+    }
+
+    .works .card:first-child {
+        color: #24554A;
+    }
+
+    .works .card:nth-child(2) {
+        color: #052C3B;
+    }
+
+    .works .card:nth-child(2) p {
+        color: #19536C;
+    }
+
+    .works p {
+        color: inherit;
+    }
+
+
+@media (min-width: 30em) {
+    .works {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .works .card > div {
+        padding-top: 100%;
+    }
+}
+
 @media (min-width: 40em) {
 
     button {
@@ -262,6 +312,10 @@ button {
         background-color: #ffe4e0;
     }
 
+    .works {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media (min-width: 50em) {
@@ -269,4 +323,10 @@ button {
         font-size: 5.6rem;
     }
 
+}
+
+@media (min-width: 70em) {
+    .works .card > div {
+        padding: 0 15rem 8rem 15rem;
+    }
 }
