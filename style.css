@@ -145,31 +145,64 @@ button {
     stroke: #262626;
 }
 
-.services img {
-    aspect-ratio: 375 / 538;
-    display: flex;
-    flex-grow: 1;
+.services {
+    max-width: 144rem;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
 }
+
+    .services img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 .services-caption {
-    height: 37.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
     text-align: center;
-    margin: 0 3rem;
+    align-content: center;
+    padding: 5rem 0;
+    max-width: 70%;
 }
 
-.services-caption a {
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #24303E;
-    font-size: 1.5rem;
+    .services-caption p {
+        margin: 2rem 0;
+        font-size: 1.6 rem;
+    }
+
+    .services-caption a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #24303E;
+        font-size: 1.5rem;
 }
 
+    .services-caption .yellow::after {
+        content: "";
+        display: block;
+        height: 1.2rem;
+        width: 12.6rem;
+        border-radius: 0.9rem;
+        margin-top: -0.8rem;
+        margin-left: 4.8rem;
+        background-color: #fff5bb;
+    }
+
+        .services-caption .pink::after {
+        content: "";
+        display: block;
+        height: 1.2rem;
+        width: 12.6rem;
+        border-radius: 0.9rem;
+        margin-top: -0.8rem;
+        margin-left: 4.8rem;
+        background-color: #ffe4e0;
+    }
+
+   
 @media (min-width: 40em) {
+
     button {
         display: none;
     }
@@ -194,10 +227,46 @@ button {
         margin:  8rem 0 5rem 0;
     }
 
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+        .services:nth-child(2) > picture {
+        order: 2;
+    }
+
+        .services-caption {
+            aspect-ratio: initial;
+            text-align: left;
+        }
+
+        .services-caption .yellow::after {
+        content: "";
+        display: block;
+        height: 1.2rem;
+        width: 12.6rem;
+        border-radius: 0.9rem;
+        margin-top: -0.8rem;
+        margin-left: -1rem;
+        background-color: #fff5bb;
+    }
+
+        .services-caption .pink::after {
+        content: "";
+        display: block;
+        height: 1.2rem;
+        width: 12.6rem;
+        border-radius: 0.9rem;
+        margin-top: -0.8rem;
+        margin-left: -1rem;
+        background-color: #ffe4e0;
+    }
+
 }
 
 @media (min-width: 50em) {
     .hero-section h1 {
         font-size: 5.6rem;
     }
+
 }
