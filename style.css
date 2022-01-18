@@ -24,7 +24,7 @@ img, svg {
 
 html {
     font-family: 'Barlow', sans-serif;
-        font-size: 62.5%; /*Postavlja veličinu fonta na 10px bazno kako bi bilo lakše za množiti - 10px/16px= 0.625*/
+    font-size: 62.5%; /*Postavlja veličinu fonta na 10px bazno kako bi bilo lakše za množiti - 10px/16px= 0.625*/
 }
 
 h1, h2, h3, a {
@@ -190,7 +190,7 @@ button {
         width: 12.6rem;
         border-radius: 0.9rem;
         margin-top: -0.8rem;
-        margin-left: 4.8rem;
+        margin-left: 10.5rem;
         background-color: #fff5bb;
     }
 
@@ -201,7 +201,7 @@ button {
         width: 12.6rem;
         border-radius: 0.9rem;
         margin-top: -0.8rem;
-        margin-left: 4.8rem;
+        margin-left: 10.5rem;
         background-color: #ffe4e0;
     }
 
