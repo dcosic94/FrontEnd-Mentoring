@@ -56,7 +56,11 @@ header {
 header .contain {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+}
+
+header svg path {
+    fill: #000;
 }
 
 .contain {
@@ -72,6 +76,7 @@ header .contain {
 
 .main-navigation ul a {
     display: block;
+    font-family: 'Barlow', sans-serif;
     padding: 0.8rem 2.5rem;
     margin-right: 0.5rem;
     font-size: 1.8rem;
@@ -287,7 +292,6 @@ button {
         color: #A7AAAD;
         padding: 2rem 0;
     }
-
 
 
 .gallery {
