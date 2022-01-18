@@ -168,7 +168,7 @@ button {
     text-align: center;
     align-content: center;
     padding: 5rem 0;
-    max-width: 70%;
+    max-width: 85%;
 }
 
     .services-caption p {
@@ -187,10 +187,9 @@ button {
         content: "";
         display: block;
         height: 1.2rem;
-        width: 12.6rem;
+        width: 100%;
         border-radius: 0.9rem;
         margin-top: -0.8rem;
-        margin-left: 10.5rem;
         background-color: #fff5bb;
     }
 
@@ -198,12 +197,13 @@ button {
         content: "";
         display: block;
         height: 1.2rem;
-        width: 12.6rem;
+        width: 100%;
         border-radius: 0.9rem;
         margin-top: -0.8rem;
-        margin-left: 10.5rem;
         background-color: #ffe4e0;
+        transition: background-color 0.3 ease-out;
     }
+
 
  .works {
      display: grid;
@@ -265,11 +265,12 @@ button {
     }
 
     .client h2 {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         color:#A7AAAD;
         text-transform: uppercase;
         letter-spacing: 0.4rem;
-        padding: 5rem 0 2rem 0 ;
+        padding: 5rem 0 2rem 0;
+        white-space: nowrap;
     }
 
     .client p {
