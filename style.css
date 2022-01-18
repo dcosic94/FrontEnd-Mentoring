@@ -184,27 +184,42 @@ button {
 }
 
     .services-caption .yellow::after {
-        content: "";
+        content: '';
         display: block;
-        height: 1.2rem;
-        width: 100%;
-        border-radius: 0.9rem;
+        height: 1rem;
+        width: 13rem;
+        background-color: #FAD400;
+        opacity: 0.2;
+        border-radius: 1rem;
         margin-top: -0.8rem;
-        background-color: #fff5bb;
+        transition: opacity 0.3s ease;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: -1;
     }
 
-        .services-caption .pink::after {
-        content: "";
+    .services-caption .pink::after {
+        content: '';
         display: block;
-        height: 1.2rem;
-        width: 100%;
-        border-radius: 0.9rem;
+        height: 1rem;
+        width: 13rem;
+        background-color: #FE7766;
+        opacity: 0.2;
+        border-radius: 1rem;
         margin-top: -0.8rem;
-        background-color: #ffe4e0;
-        transition: background-color 0.3 ease-out;
+        transition: opacity 0.3s ease;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: -1;
     }
 
-
+    .services-caption a:hover::after,
+    .services-caption a:focus-visible::after {
+        opacity: 1;
+    }
+    
  .works {
      display: grid;
      max-width: 144rem;
