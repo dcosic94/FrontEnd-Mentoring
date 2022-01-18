@@ -384,6 +384,8 @@ button {
     transition:fill 0.3s ease-out, background-color 0.3s ease-out;
 }
 
+
+
 /*Media Queries - responsive*/
 
 @media (min-width: 30em) {
@@ -435,27 +437,7 @@ button {
             text-align: left;
         }
 
-        .services-caption .yellow::after {
-        content: "";
-        display: block;
-        height: 1.2rem;
-        width: 12.6rem;
-        border-radius: 0.9rem;
-        margin-top: -0.8rem;
-        margin-left: -1rem;
-        background-color: #fff5bb;
-    }
 
-        .services-caption .pink::after {
-        content: "";
-        display: block;
-        height: 1.2rem;
-        width: 12.6rem;
-        border-radius: 0.9rem;
-        margin-top: -0.8rem;
-        margin-left: -1rem;
-        background-color: #ffe4e0;
-    }
 
     .works {
         grid-template-columns: 1fr 1fr;
@@ -483,6 +465,38 @@ button {
 
 .sunny-footer {
     max-width: 100%;
+}
+
+.services-caption .yellow::after {
+    content: '';
+    display: block;
+    height: 1rem;
+    width: 13rem;
+    background-color: #FAD400;
+    opacity: 0.2;
+    border-radius: 1rem;
+    margin-top: -0.8rem;
+    transition: opacity 0.3s ease;
+    position: relative;
+    left: 0%;
+    transform: translate(-10%, 0);
+    z-index: -1;
+}
+
+.services-caption .pink::after {
+    content: '';
+    display: block;
+    height: 1rem;
+    width: 13rem;
+    background-color: #FE7766;
+    opacity: 0.2;
+    border-radius: 1rem;
+    margin-top: -0.8rem;
+    transition: opacity 0.3s ease;
+    position: relative;
+    left: 0%;
+    transform: translate(-9%, 0);
+    z-index: -1;
 }
 
 
