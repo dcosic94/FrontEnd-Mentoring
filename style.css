@@ -48,10 +48,9 @@ p {
 }
 
 header {
-    position: absolute;
-    width: 100%;
     padding: 1.8rem;
     background-color: #3DBEFF;
+
 }
 
 header .contain {
@@ -182,45 +181,29 @@ button {
         text-transform: uppercase;
         color: #24303E;
         font-size: 1.5rem;
-        position: relative;
 }
 
     .services-caption .yellow::after {
-        content: '';
+        content: "";
         display: block;
-        height: 1rem;
-        width: 13rem;
-        background-color: #FAD400;
-        opacity: 0.2;
-        border-radius: 1rem;
+        height: 1.2rem;
+        width: 100%;
+        border-radius: 0.9rem;
         margin-top: -0.8rem;
-        transition: opacity 0.3s ease;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        z-index: -1;
+        background-color: #fff5bb;
     }
 
         .services-caption .pink::after {
-        content: '';
+        content: "";
         display: block;
-        height: 1rem;
-        width: 13rem;
-        background-color: #FE7766;
-        opacity: 0.2;
-        border-radius: 1rem;
+        height: 1.2rem;
+        width: 100%;
+        border-radius: 0.9rem;
         margin-top: -0.8rem;
-        transition: opacity 0.3s ease;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        z-index: -1;
+        background-color: #ffe4e0;
+        transition: background-color 0.3 ease-out;
     }
 
-    .services-caption a:hover::after,
-    .services-caption a:focus-visible::after {
-        opacity: 1;
-    }
 
  .works {
      display: grid;
@@ -282,11 +265,12 @@ button {
     }
 
     .client h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color:#A7AAAD;
         text-transform: uppercase;
         letter-spacing: 0.4rem;
         padding: 5rem 0 2rem 0;
+        white-space: nowrap;
     }
 
     .client p {
@@ -311,7 +295,7 @@ button {
     .client cite {
         font-family: 'Barlow', sans-serif;
         font-style: normal;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: #A7AAAD;
         padding: 2rem 0;
     }
@@ -388,8 +372,12 @@ button {
 /*Media Queries - responsive*/
 
 @media (min-width: 30em) {
+    .works {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .works .card > div {
-        padding: 0 1rem 12rem 1rem;
+        padding-top: 100%;
     }
 }
 
@@ -432,10 +420,31 @@ button {
             text-align: left;
         }
 
+        .services-caption .yellow::after {
+        content: "";
+        display: block;
+        height: 1.2rem;
+        width: 12.6rem;
+        border-radius: 0.9rem;
+        margin-top: -0.8rem;
+        margin-left: -1rem;
+        background-color: #fff5bb;
+    }
+
+        .services-caption .pink::after {
+        content: "";
+        display: block;
+        height: 1.2rem;
+        width: 12.6rem;
+        border-radius: 0.9rem;
+        margin-top: -0.8rem;
+        margin-left: -1rem;
+        background-color: #ffe4e0;
+    }
+
     .works {
         grid-template-columns: 1fr 1fr;
     }
-
 
 .gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -448,8 +457,8 @@ button {
 .client .desktop {
     max-width: 144rem;
     display: grid;
-    grid-auto-flow: row;
-    padding: 0 5rem 10rem 5rem;
+    grid-auto-flow: column;
+    padding: 0 10rem 10rem 10rem;
 }
 
 .client h2 {
@@ -461,53 +470,11 @@ button {
     max-width: 100%;
 }
 
-.services-caption .yellow::after {
-    content: '';
-    display: block;
-    height: 1rem;
-    width: 13rem;
-    background-color: #FAD400;
-    opacity: 0.2;
-    border-radius: 1rem;
-    margin-top: -0.8rem;
-    transition: opacity 0.3s ease;
-    position: absolute;
-    left: 0%;
-    transform: translate(-10%, 0);
-    z-index: -1;
-}
-
-.services-caption .pink::after {
-    content: '';
-    display: block;
-    height: 1rem;
-    width: 13rem;
-    background-color: #FE7766;
-    opacity: 0.2;
-    border-radius: 1rem;
-    margin-top: -0.8rem;
-    transition: opacity 0.3s ease;
-    position: absolute;
-    left: 0%;
-    transform: translate(-9%, 0);
-    z-index: -1;
-}
 
 @media (min-width: 50em) {
     .hero-section h1 {
         font-size: 5.6rem;
     }
-
-    .works .card > div {
-        padding: 0 1rem 2rem 1rem;
-}
-
-    .client .desktop {
-    max-width: 144rem;
-    display: grid;
-    grid-auto-flow: column;
-    padding: 0 5rem 10rem 5rem;
-}
 
 }
 
