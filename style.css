@@ -245,6 +245,12 @@ button {
         color: inherit;
     }
 
+    .works img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 .client {
     display: grid;
     text-align: center;
@@ -302,7 +308,7 @@ button {
     .gallery img  {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .sunny-footer {
