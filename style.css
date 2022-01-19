@@ -452,11 +452,17 @@ button {
     .works .card > div {
         padding-top: 100%;
     }
+
 }
 
 @media (min-width: 40em) {
 
     button {
+        display: none;
+    }
+
+    
+    button.active {
         display: none;
     }
 
