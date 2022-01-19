@@ -25,3 +25,4 @@ close.addEventListener('click', function() {
     navigation.classList.toggle('is-active');
     navigation.classList.toggle('is-visable');
 });
+
