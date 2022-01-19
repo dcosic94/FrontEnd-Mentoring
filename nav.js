@@ -22,6 +22,6 @@ close.addEventListener('click', function() {
     close.classList.remove('active');
     hamburger.classList.remove('inactive');
     hamburger.classList.toggle('active');
-    navigation.classList.remove('is-active');
-    navigation.classList.remove('is-visable');
+    navigation.classList.toggle('is-active');
+    navigation.classList.toggle('is-visable');
 });

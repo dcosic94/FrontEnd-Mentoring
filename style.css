@@ -96,6 +96,14 @@ header svg path {
     opacity: 1;
 }
 
+.main-navigation ul.non-visable {
+    display: none;
+}
+
+.main-navigation ul.non-active {
+    opacity: 0;
+}
+
 .main-navigation ul::before {
     display: block;
     content: '';
