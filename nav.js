@@ -8,9 +8,20 @@ hamburger.addEventListener('click', function() {
     hamburger.setAttribute('aria-expanded', !expanded);
 
     navigation.classList.toggle('is-visable');
+    close.classList.toggle('active');
+    hamburger.classList.toggle('inactive');
+
 
 
     setTimeout(() => {
         navigation.classList.toggle('is-active');
     });
+});
+
+close.addEventListener('click', function() {
+    close.classList.remove('active');
+    hamburger.classList.remove('inactive');
+    hamburger.classList.toggle('active');
+    navigation.classList.remove('is-active');
+    navigation.classList.remove('is-visable');
 });

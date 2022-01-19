@@ -82,7 +82,7 @@ header svg path {
     right: 1rem;
     background-color: #fff;
     flex-direction: column;
-    min-width: calc(100vw - 6.5rem);
+    min-width: calc(100vw - 4.5rem);
     transform: translate(0,5rem);
     padding: 3rem;
     transition: opacity 0.5s ease;
@@ -144,6 +144,18 @@ header svg path {
     color: #fff;
     background-color: #000;
     text-decoration: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+button.active {
+    display: block;
+}
+
+button.inactive {
+    display: none;
 }
 
 
