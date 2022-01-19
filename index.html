@@ -30,7 +30,7 @@
           <span class="u-visuallyHidden">Sunnyside Agency</span>
         </p>
         <nav aria-label="Main" class="main-navigation">
-          <button type="button">
+          <button type="button" class="hamburger" aria-expanded="false" aria-controls="primary-nav">
             <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
@@ -39,7 +39,8 @@
             </svg>
             <span class="u-visuallyHidden">Open main navigation</span>
           </button>
-          <ul>
+
+          <ul class="main-navigation-list" id="primary-nav">
             <li>
               <a href="#about">About</a>
             </li>
@@ -262,5 +263,7 @@
         </nav>
       </div>
     </footer>
+
+    <script src="nav.js"></script>
   </body>
 </html>
