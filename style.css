@@ -89,7 +89,7 @@ header svg path {
     transition: opacity 0.5s ease;
 }
 
-.main-navigation ul.is-visable {
+.main-navigation ul.is-visible {
     display: flex;
 }
 
@@ -97,13 +97,6 @@ header svg path {
     opacity: 1;
 }
 
-.main-navigation ul.non-visable {
-    display: none;
-}
-
-.main-navigation ul.non-active {
-    opacity: 0;
-}
 
 .main-navigation ul::before {
     display: block;
@@ -122,7 +115,7 @@ header svg path {
     font-family: 'Barlow', sans-serif;
     padding: 0.8rem 2.5rem;
     margin: 1rem 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #262626;
     text-decoration: none;
